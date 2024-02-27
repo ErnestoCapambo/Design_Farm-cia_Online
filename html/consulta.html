@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/consulta.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,700">
     <title>Mostrar-Produtos</title>
@@ -24,50 +24,29 @@
         </nav>
     </header>
     <div class="banner container">
+        <img src="../img/consultorio2.jpg" alt="consulta">
         <div class="title">
             <h2>Soluções para a sua saúde!</h2>
             <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt itaque reiciendis maiores natus accusantium quam iure at vel beatae, recusandae architecto provident voluptatibus expedita quisquam quod, est ullam inventore voluptatem.</h3>
         </div>
-        <div class="buttons">
+        <!-- <div class="buttons">
             <button class="btn btn-entrar"> Área reservada <i class="fa fa-arrow-circle-right"></i></button>
             <button class="btn btn-sobre"> Saber mais <i class="fa fa-question-circle"></i></button>
-        </div>
+        </div> -->
     </div>
-    <main class="servicos container">
-        <h2>Tipos de consultas</h2>
-        <article class="servico s1" onmouseover="mudarCor()">
-            <a href="consulta.html"><img src="../img/consultorio.jpg" alt="consultas médicas"></a>
-            <div class="inner">
-                <a href="#" class="change">Consultas médicas</a>
-                <h4 class="change">Consultório, Análise diversas</h4>
-                <p class="change">Atendimento médico geral ou especializado, como pediatria, cardiologia, dermatologia, entre outros.</p>
-            </div>
-        </article>
-        <article class="servico s2" onmouseover="mudarCor()">
-            <a href="#"><img src="../img/medicamentos.jpg" alt="Venda de medicamentos"></a>
-            <div class="inner">
-                <a href="#" class="change">Venda de medicamentos</a>
-                <h4 class="change">Vendas locais, e entrega domiciliar</h4>
-                <p class="change">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis unde minus, dolorem nobis cumque?</p>
-            </div>
-        </article>
-        <article class="servico s3" onmouseover="mudarCor()">
-            <a href="#"><img src="../img/odontologia.jpg" alt="Odontologia"></a>
-            <div class="inner">
-                <a href="#" class="change">Serviços odontológicos</a>
-                <h4 class="change">Serviços odontológicos</h4>
-                <p class="change"> Consultas de rotina, limpezas dentárias, tratamentos de canal, extrações, colocação de próteses, entre outros.</p>
-            </div>
-        </article>
-    </main>
     <!-- NEWSLETTER -->
-    <section class="newsletter container">
-        <h2> Marca já a sua consulta! </h2>
-        <h3> Preencha o seu calendario, e fique descansado.</h3>
+    <main class="newsletter container">
+        <h2> Preencha o formulário e marca a sua consulta! </h2>
+        <h3> Preencha o seu calendário, e garante a sua saúde.</h3>
         <form>
-            <button><a href="consulta.html"><< Marcar consulta >></a></button>
+            <input type="text" name="nome" id="nome" class="nome" placeholder="Nome completo">
+            <input type="number" name="contacto" class="contacto" id="contacto" placeholder="Contacto">
+            <input type="date" name="data" id="data" class="data">
+            <input type="time" name="hora" id="hora" class="hora">
+            <button> Enviar </button>
+            <button class="btn-vago"><a href="#"><< Ver dias vagos >></a></button>
         </form>
-    </section>
+    </main>
     <!-- RODAPE -->
     <footer class="rodape container bg-gradient">
         <div class="social-icons">
@@ -80,6 +59,6 @@
             Copyright @ ClínicaRG 2023. Todos os direitos reservados.
         </p>
     </footer>
-    <script src="../javascript/index.js"></script>
+    <script src="../javascript/consulta.js"></script>
 </body>
 </html>
